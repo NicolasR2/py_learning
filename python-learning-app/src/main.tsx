@@ -8,6 +8,7 @@ import Cursos from "./pages/Cursos";
 import "katex/dist/katex.min.css";
 import DocenteDashboard from "./pages/DocenteDashboard";
 import AdminDashboard from "./pages/AdminDashboard";
+import CursoLoader from "./pages/CursoLoader";
 
 import "./index.css";
 
@@ -16,7 +17,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Routes>
       <Route path="/" element={<Login />} />
       <Route path="/home" element={<Home />} />
-      <Route path="/curso-demo" element={<Cursos />} />
+      <Route path="/curso/:id" element={<CursoLoader />} />
       <Route path="/docente" element={<DocenteDashboard />} />
       <Route path="/admin" element={<AdminDashboard />} />
     </Routes>

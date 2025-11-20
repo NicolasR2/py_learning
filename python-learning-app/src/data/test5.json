@@ -1,0 +1,94 @@
+{
+    "curso": {
+      "id": "python_basico",
+      "titulo": "Curso de Python Básico",
+      "descripcion": "Aprende Python desde cero con ejercicios prácticos diseñados para jóvenes entre 16 y 18 años.",
+      "modulos": [
+        {
+          "id": "mod_1",
+          "titulo": "Módulo 1: Hola Mundo",
+          "descripcion": "Primer contacto con Python: imprimir en pantalla usando print().",
+          "submodulos": [
+            {
+              "id": "sub_1_1",
+              "titulo": "Cómo imprimir en la consola",
+              "alineacion": "center",
+  
+              "teoria": [
+                { "tipo": "texto", "valor": "En Python usamos la función " },
+                { "tipo": "codigo", "valor": "print()" },
+                { "tipo": "texto", "valor": " para mostrar mensajes en pantalla." }
+              ],
+  
+              "ejemplos": [
+                {
+                  "descripcion": "Imprimir texto",
+                  "codigo": "print(\"Hola, mundo\")",
+                  "salida": "Hola, mundo"
+                },
+                {
+                  "descripcion": "Imprimir operaciones",
+                  "codigo": "print(5 + 3)",
+                  "salida": "8"
+                },
+                {
+                  "descripcion": "Imprimir texto y números",
+                  "codigo": "print(\"Resultado:\", 10)",
+                  "salida": "Resultado: 10"
+                }
+              ],
+  
+              "ejercicios": {
+                "facil": [
+                  {
+                    "id": "ej_1_f_1",
+                    "tipo": "completar",
+                    "enunciado": "Haz que Python imprima el mensaje: “Bienvenido”",
+                    "plantilla": "(\"Bienvenido\")",
+                    "respuesta": "print(\"Bienvenido\")"
+                  },
+                  {
+                    "id": "ej_1_f_2",
+                    "tipo": "corregir",
+                    "enunciado": "Corrige el siguiente error:\nPrint(\"Hola\")",
+                    "respuesta": "print(\"Hola\")",
+                    "explicacion": "La función print debe ser en minúscula."
+                  }
+                ],
+  
+                "intermedio": [
+                  {
+                    "id": "ej_1_i_1",
+                    "tipo": "escribir",
+                    "enunciado": "Escribe un programa que imprima:\nHola\nEstoy aprendiendo Python",
+                    "respuesta": "print(\"Hola\")\nprint(\"Estoy aprendiendo Python\")"
+                  },
+                  {
+                    "id": "ej_1_i_2",
+                    "tipo": "mezclar",
+                    "enunciado": "Imprime exactamente: Mi edad es 17 años",
+                    "respuesta": [
+                      "print(\"Mi edad es\", 17)",
+                      "print(\"Mi edad es \" + str(17) + \" años\")"
+                    ]
+                  }
+                ],
+  
+                "dificil": [
+                  {
+                    "id": "ej_1_d_1",
+                    "tipo": "interpretar",
+                    "enunciado": "¿Qué imprime este código?\nprint(\"5 + 3 =\", 5 + 3)",
+                    "respuesta": "5 + 3 = 8"
+                  },
+                  {
+                    "id": "ej_1_d_2",
+                    "tipo": "variables",
+                    "enunciado": "Crea una frase concatenada usando dos variables (nombre y edad).",
+                    "respuesta": "nombre = \"Sara\"\nedad = 18\nprint(\"Hola, soy \" + nombre + \" y tengo \" + str(edad) + \" años.\")"
+                  }
+                ]
+              }
+            }
+          ]}]}
+  }

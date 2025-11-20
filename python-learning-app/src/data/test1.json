@@ -1,0 +1,122 @@
+{
+  "curso": {
+    "id": 1,
+    "titulo": "Introducción a Python",
+    "descripcion": "Aprende los fundamentos de Python desde cero con ejercicios prácticos",
+    "modulos": [
+      {
+        "id": 1,
+        "titulo": "Módulo 1: Primeros Pasos",
+        "submodulos": [
+          {
+            "id": 1,
+            "titulo": "1.1 Variables y Tipos de Datos",
+            "teoria": [
+              {
+                "tipo": "texto",
+                "valor": "En Python, las variables se crean simplemente asignando un valor. No necesitas declarar el tipo de dato. "
+              },
+              {
+                "tipo": "codigo",
+                "valor": "nombre = \"Juan\"\nedad = 25\naltura = 1.75"
+              },
+              {
+                "tipo": "texto",
+                "valor": " Los principales tipos de datos son: strings (texto), integers (enteros), floats (decimales) y booleans (verdadero/falso)."
+              }
+            ],
+            "ejemplos": [
+              {
+                "descripcion": "Creando variables de diferentes tipos",
+                "codigo": "nombre = \"María\"\nedad = 30\nes_estudiante = True\nprint(nombre, edad, es_estudiante)",
+                "salida": "María 30 True"
+              },
+              {
+                "descripcion": "Operaciones con variables numéricas",
+                "codigo": "x = 10\ny = 3\nresultado = x + y\nprint(resultado)",
+                "salida": "13"
+              }
+            ],
+            "ejercicios": {
+              "facil": [
+                {
+                  "id": 1,
+                  "tipo": "interpretar",
+                  "enunciado": "¿Qué imprimirá el siguiente código?\n\nx = 5\ny = 2\nprint(x * y)",
+                  "respuestas_correctas": ["10"],
+                  "salida": null
+                },
+                {
+                  "id": 2,
+                  "tipo": "interpretar",
+                  "enunciado": "¿Qué tipo de dato es la variable?\n\ntemp = 36.5\n\n(Responde: int, float, str o bool)",
+                  "respuestas_correctas": ["float"],
+                  "salida": null
+                }
+              ],
+              "intermedio": [
+                {
+                  "id": 3,
+                  "tipo": "escribir",
+                  "enunciado": "Crea una variable llamada 'mensaje' con el texto 'Hola Mundo' e imprímela.",
+                  "respuestas_correctas": [
+                    "mensaje = 'Hola Mundo'\nprint(mensaje)",
+                    "mensaje = \"Hola Mundo\"\nprint(mensaje)"
+                  ],
+                  "salida": "Hola Mundo"
+                }
+              ],
+              "dificil": [
+                {
+                  "id": 4,
+                  "tipo": "escribir",
+                  "enunciado": "Crea tres variables: nombre='Ana', edad=28, ciudad='Bogotá'. Imprime el mensaje: 'Ana tiene 28 años y vive en Bogotá'",
+                  "respuestas_correctas": [],
+                  "salida": "Ana tiene 28 años y vive en Bogotá"
+                }
+              ]
+            }
+          },
+          {
+            "id": 2,
+            "titulo": "1.2 Operaciones Básicas",
+            "teoria": [
+              {
+                "tipo": "texto",
+                "valor": "Python permite realizar operaciones matemáticas básicas: suma (+), resta (-), multiplicación (*), división (/), división entera (//), módulo (%) y potencia (**)."
+              }
+            ],
+            "ejemplos": [
+              {
+                "descripcion": "Operaciones aritméticas",
+                "codigo": "a = 15\nb = 4\nprint(a + b)\nprint(a // b)\nprint(a % b)",
+                "salida": "19\n3\n3"
+              }
+            ],
+            "ejercicios": {
+              "facil": [
+                {
+                  "id": 5,
+                  "tipo": "interpretar",
+                  "enunciado": "¿Cuál es el resultado de: 10 % 3?",
+                  "respuestas_correctas": ["1"],
+                  "salida": null
+                }
+              ],
+              "intermedio": [
+                {
+                  "id": 6,
+                  "tipo": "escribir",
+                  "enunciado": "Calcula 2 elevado a la 8 e imprime el resultado usando el operador **",
+                  "respuestas_correctas": ["print(2 ** 8)"],
+                  "salida": "256"
+                }
+              ],
+              "dificil": []
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

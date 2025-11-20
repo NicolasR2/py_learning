@@ -1,0 +1,118 @@
+{
+  "id": "sub_1_2",
+  "titulo": "Cómo imprimir en la consola",
+  "alineacion": "center",
+  "teoria": [
+    {
+      "tipo": "texto",
+      "valor": "La función print() sirve para mostrar información en pantalla."
+    },
+    {
+      "tipo": "texto",
+      "valor": "Puedes imprimir texto (strings), números enteros (int), decimales (float) y booleanos (True/False)."
+    },
+    {
+      "tipo": "texto",
+      "valor": "El texto siempre va entre comillas porque es un string."
+    },
+    {
+      "tipo": "texto",
+      "valor": "Python distingue entre mayúsculas y minúsculas: print() solo funciona así."
+    }
+  ],
+  "ejemplos": [
+    {
+      "descripcion": "Imprimir texto",
+      "codigo": "print(\"Hola, mundo\")",
+      "salida": "Hola, mundo"
+    },
+    {
+      "descripcion": "Imprimir un número entero",
+      "codigo": "print(5)",
+      "salida": "5"
+    },
+    {
+      "descripcion": "Imprimir un número decimal",
+      "codigo": "print(3.2)",
+      "salida": "3.2"
+    },
+    {
+      "descripcion": "Imprimir un booleano",
+      "codigo": "print(True)",
+      "salida": "True"
+    },
+    {
+      "descripcion": "Imprimir texto y números",
+      "codigo": "print(\"Resultado:\", 10)",
+      "salida": "Resultado: 10"
+    }
+  ],
+  "ejercicios": {
+    "facil": [
+      {
+        "id": "ej_1_f_1",
+        "tipo": "completar",
+        "tipo_ejercicio": "consola",
+        "enunciado": "Haz que Python imprima el mensaje: “Bienvenido”.",
+        "plantilla": "(\"Bienvenido\")",
+        "respuestas_correctas": [
+          "print(\"Bienvenido\")"
+        ],
+        "salida": "Bienvenido"
+      },
+      {
+        "id": "ej_1_f_2",
+        "tipo": "corregir",
+        "tipo_ejercicio": "consola",
+        "enunciado": "Corrige el siguiente error:\nPrint(\"Hola\")",
+        "respuestas_correctas": [
+          "print(\"Hola\")"
+        ],
+        "explicacion": "La función print debe estar en minúscula.",
+        "salida": "Hola"
+      }
+    ],
+    "intermedio": [
+      {
+        "id": "ej_1_i_1",
+        "tipo": "escribir",
+        "tipo_ejercicio": "consola",
+        "enunciado": "Escribe un programa que imprima:\nHola\nEstoy aprendiendo Python",
+        "salida": "Hola\nEstoy aprendiendo Python"
+      },
+      {
+        "id": "ej_1_i_2",
+        "tipo": "mezclar",
+        "tipo_ejercicio": "consola",
+        "enunciado": "Imprime exactamente: Mi edad es 17 años",
+        "respuestas_correctas": [
+          "print(\"Mi edad es\", 17)",
+          "print(\"Mi edad es \" + str(17) + \" años\")",
+          "print(f\"Mi edad es {17} años\")"
+        ],
+        "salida": "Mi edad es 17 años"
+      }
+    ],
+    "dificil": [
+      {
+        "id": "ej_1_d_1",
+        "tipo": "interpretar",
+        "tipo_ejercicio": "consola",
+        "enunciado": "¿Qué imprime este código?\nprint(\"5 + 3 =\", 5 + 3)",
+        "salida": "5 + 3 = 8"
+      },
+      {
+        "id": "ej_1_d_2",
+        "tipo": "variables",
+        "tipo_ejercicio": "consola",
+        "enunciado": "Crea una frase concatenada usando dos variables (nombre y edad).",
+        "respuestas_correctas": [
+          "print(\"Hola, soy Sara y tengo 18 años.\")",
+          "print(\"Hola, soy \" + \"Sara\" + \" y tengo \" + \"18 años.\")",
+          "print(f\"Hola, soy {'Sara'} y tengo {18} años.\")"
+        ],
+        "salida": "Hola, soy Sara y tengo 18 años."
+      }
+    ]
+  }
+}

@@ -7,29 +7,9 @@ export default function Home() {
       id: 1,
       titulo: "Introducción a Python",
       descripcion: "Aprende los fundamentos del lenguaje y su sintaxis básica.",
-      progreso: 70,
+      progreso: 0,
     },
-    {
-      id: 2,
-      titulo: "Estructuras de Datos",
-      descripcion:
-        "Domina listas, diccionarios y conjuntos con ejercicios prácticos.",
-      progreso: 45,
-    },
-    {
-      id: 3,
-      titulo: "Programación Orientada a Objetos",
-      descripcion:
-        "Crea clases, métodos y objetos para estructurar mejor tu código.",
-      progreso: 20,
-    },
-    {
-      id: 4,
-      titulo: "Machine Learning Básico",
-      descripcion:
-        "Aprende los conceptos iniciales de aprendizaje automático con Python.",
-      progreso: 10,
-    },
+
   ];
 
   return (
@@ -72,7 +52,7 @@ export default function Home() {
 
             {/* Botón de acción */}
             <Link
-              to={`/curso/${curso.id}/ejercicio`}
+              to={`/curso/${curso.id}`}
               className="block text-center p-2 rounded-lg font-semibold transition-colors"
               style={{
                 backgroundColor: "#1F68EA", // azul eléctrico
