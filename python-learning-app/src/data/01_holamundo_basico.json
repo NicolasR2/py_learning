@@ -1,0 +1,21 @@
+{
+    "id": "curso1",
+    "titulo": "Hola Mundo — Básico",
+    "descripcion": "Primer contacto: imprimir texto en pantalla con print().",
+    "alineacion": "center",
+    "contenidoLatex": [
+      { "tipo": "texto", "valor": "La función para mostrar texto en Python es " },
+      { "tipo": "latex", "valor": "\\texttt{print()}" },
+      { "tipo": "texto", "valor": ". Se usa así: " },
+      { "tipo": "latex", "valor": "\\texttt{print('Hola Mundo')}" }
+    ],
+    "ejercicios": [
+      {
+        "id": "ej_hm_01",
+        "titulo": "Imprime Hola Python",
+        "nivel": 1,
+        "enunciado": "Escribe un programa que imprima exactamente: Hola Python"
+      }
+    ]
+  }
+  

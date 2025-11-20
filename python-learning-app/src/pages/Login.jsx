@@ -28,9 +28,7 @@ export default function Login() {
         return;
       }
 
-      // Guardar info del usuario en localStorage (opcional)
       localStorage.setItem("userId", data.userId);
-
       navigate("/home");
     } catch (err) {
       console.error(err);
@@ -39,12 +37,21 @@ export default function Login() {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-100">
+    <div
+      className="flex justify-center items-center h-screen"
+      style={{ backgroundColor: "#F5F5F5" }} // gris perla
+    >
       <form
         onSubmit={handleSubmit}
-        className="bg-white p-8 rounded-2xl shadow-md w-80"
+        className="p-8 rounded-2xl shadow-md w-80"
+        style={{
+          backgroundColor: "#FFFFFF", // blanco
+          color: "#263238", // texto principal azul grisáceo
+        }}
       >
-        <h2 className="text-2xl font-bold mb-6 text-center">Iniciar Sesión</h2>
+        <h2 className="text-2xl font-bold mb-6 text-center">
+          Iniciar Sesión
+        </h2>
 
         <input
           type="email"
@@ -52,7 +59,10 @@ export default function Login() {
           placeholder="Correo electrónico"
           value={formData.email}
           onChange={handleChange}
-          className="w-full p-2 mb-4 border rounded-lg"
+          className="w-full p-2 mb-4 border rounded-lg focus:outline-none"
+          style={{
+            borderColor: "#43A047", // borde verde menta
+          }}
           required
         />
 
@@ -62,17 +72,31 @@ export default function Login() {
           placeholder="Contraseña"
           value={formData.password}
           onChange={handleChange}
-          className="w-full p-2 mb-4 border rounded-lg"
+          className="w-full p-2 mb-4 border rounded-lg focus:outline-none"
+          style={{
+            borderColor: "#43A047", // borde verde menta
+          }}
           required
         />
 
         {error && (
-          <p className="text-red-500 text-sm mb-3 text-center">{error}</p>
+          <p
+            className="text-sm mb-3 text-center"
+            style={{ color: "#FFC107" }} // mensaje ámbar
+          >
+            {error}
+          </p>
         )}
 
         <button
           type="submit"
-          className="w-full bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600"
+          className="w-full p-2 rounded-lg font-semibold transition-colors"
+          style={{
+            backgroundColor: "#1F68EA", // azul eléctrico
+            color: "#FFFFFF",
+          }}
+          onMouseOver={(e) => (e.target.style.backgroundColor = "#1565C0")}
+          onMouseOut={(e) => (e.target.style.backgroundColor = "#1E88E5")}
         >
           Entrar
         </button>
